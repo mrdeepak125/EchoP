@@ -2,7 +2,7 @@
 export async function homePageData(language) {
   try {
     const response = await fetch(
-      `${"https://jiosaavn-api-sigma-sandy.vercel.app"}/modules?language=${language.toString()}`,
+      `${"https://saavn.zendax.me"}/api/modules?language=${language.toString()}`,
       {
         next: {
           revalidate: 14400,
